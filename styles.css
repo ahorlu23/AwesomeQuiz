@@ -223,6 +223,6 @@ section .option_list .option:hover{
 
 .option_list .option .icon.cross{
     color: #a42834;
-    border-color: #f8d7da;
-    background: #a42834;
+    border-color: #a42834;
+    background: #f8d7da;
 }
