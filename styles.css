@@ -222,7 +222,7 @@ section .option_list .option:hover{
 }
 
 .option_list .option .icon.cross{
-    color: #a4283a;
+    color: #a42834;
     border-color: #f8d7da;
-    background: #a4283a;
+    background: #a42834;
 }
