@@ -78,7 +78,8 @@ function optionSelected(answer){
         // If answer is wrong then automatically select the correct answer
         for(let i = 0; i < allOptions; i++){
             if(option_list.children[i].textContent == correctAns){
-                option_list.children[i].setAttribute("class", "options correct");
+                option_list.children[i].classList.add("correct"); // Corrected line
+                // option_list.children[i].setAttribute("class", "options correct");
                 option_list.children[i].insertAdjacentHTML("beforeend", tickIcon);
             }
         }
