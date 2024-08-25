@@ -2,13 +2,13 @@
 let quetions = [
     {
         numb: 1,
-        quetion:"How do you write" + "Hello World" + "in an alert box?",
-        answer: "alert" + "(Hello World);",
+        quetion:"How do you write " + " Hello World " + " in an alert box?",
+        answer: "alert " + " (Hello World);",
         options: [
-            "msg" + "(Hello World);",
-            "alertBox" + "(Hello World);",
-            "alert" + "(Hello World);",
-            "msgBox" + "(Hello World);"
+            "msg " + " (Hello World);",
+            "alertBox " + " (Hello World);",
+            "alert " + " (Hello World);",
+            "msgBox " + " (Hello World);"
         ]
     },
 
