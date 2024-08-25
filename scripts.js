@@ -58,7 +58,7 @@ function showQuestions(index) {
 }
 
 function optionSelected(answer){
-    let userAns = answer.textContent();
+    let userAns = answer.textContent;
     let correctAns = quetions[que_count].answer;
     if(userAns == correctAns){
         answer.classList.add("correct");
