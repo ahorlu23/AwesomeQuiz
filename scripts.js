@@ -5,6 +5,8 @@ const exit_btn = info_box.querySelector(".buttons .quit");
 const continue_btn = info_box.querySelector(".buttons .restart");
 const quiz_box = document.querySelector(".quiz_box");
 
+const option_list = document.querySelector(".option_list");
+
 //If start Quiz Button is clicked
 start_btn.onclick = ()=>{
     info_box.classList.add("activeInfo");//show the info box
@@ -43,7 +45,7 @@ next_btn.onclick = ()=>{
 //Getting questions and options from array 
 function showQuestions(index) {
     const que_text = document.querySelector(".que_text");
-    const option_list = document.querySelector(".option_list");
+
     let que_tag = '<span>'+ quetions[index].numb + "." + quetions[index].quetion + '</span>';
     let option_tag = '<div class="option">'+ quetions[index].options[0] +'<span></span></div>'
                         +'<div class="option">'+ quetions[index].options[1] +'<span></span></div>'
