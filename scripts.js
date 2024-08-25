@@ -51,7 +51,25 @@ function showQuestions(index) {
                         +'<div class="option">'+ quetions[index].options[3] +'<span></span></div>';
     que_text.innerHTML = que_tag;
     option_list.innerHTML = option_tag;
+    const option = option_list.querySelectorAll(".option");
+    for (let i = 0; i < option.length; i++) {
+        option[i].setAttribute("onclick","optionSelected(this)");
+    }
 }
+
+function optionSelected(answer){
+    let userAns = answer.textContent();
+    let correctAns = quetions[que_count].answer;
+    if(userAns == correctAns){
+        answer.classList.add("");
+        console.log("Answer is correct");
+    }else{
+        console.log("Answer is Wrong");
+    }
+    
+}
+
+
 
 function queCounter(index){
     const bottom_ques_counter = quiz_box.querySelector(".total_que");
