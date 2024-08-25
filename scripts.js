@@ -79,6 +79,7 @@ function optionSelected(answer){
         for(let i = 0; i < allOptions; i++){
             if(option_list.children[i].textContent == correctAns){
                 option_list.children[i].setAttribute("class", "options correct");
+                option_list.children[i].insertAdjacentHTML("beforeend", tickIcon);
             }
         }
     }
