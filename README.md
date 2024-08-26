@@ -16,4 +16,4 @@
 
 #### So with the above pictures you can see that a user is shown his/her result after the quiz.
 
-## END . THNAK YOU
+## END . THANK YOU
