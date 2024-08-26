@@ -51,7 +51,7 @@ let quetions = [
     {
         numb: 5,
         quetion:"How do you create a function in JavaScript?",
-        answer: "function myFunction()",
+        answer: "call function myFunction()",
         options: [
             "call myFunction()",
             "myFunction()",
