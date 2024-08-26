@@ -3,4 +3,17 @@
 ### In the subsequent pages I would be uploading some screenshots of some parts of the Quiz app.
 
 ## FRONTPAGE
-![desktop](./image/active-states.jpg)
+![desktop](./images/Desktop.PNG)
+
+## RULES
+![desktop](./images/Rules%20page.PNG)
+
+## QUESTIONS
+![desktop](./images/Wrong%20and%20right.PNG)
+
+## RESULT PAGE
+![desktop](./images/Result.PNG)
+
+#### So with the above pictures you can see that a user is shown his/her result after the quiz.
+
+## END . THNAK YOU
