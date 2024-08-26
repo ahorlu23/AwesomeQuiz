@@ -43,23 +43,48 @@ const result_box = document.querySelector(".result_box");
 const restart_quiz = result_box.querySelector(".buttons .restart");
 const quit_quiz = result_box.querySelector(".buttons .quit");
 
-restart_quiz.onclick = () =>{
-    quiz_box.classList.add("activeQuiz");
-    result_box.classList.remove("activeResult");
-    let que_count = 0;
-    let que_numb = 1;
-    let timeValue = 15;
-    let widthValue = 0;
-    let userScore = 0;
-    showQuestions(que_count);
-    queCounter(que_numb);
-    clearInterval(counter);
-    startTimer(timeValue);
-    clearInterval(counterLine);
-    startTimerLine(widthValue);
-    next_btn.style.display = "none";
-    timeOff.textContent = "Time Left";
-}
+
+restart_quiz.onclick = () => {
+    quiz_box.classList.add("activeQuiz"); // Show the quiz box
+    result_box.classList.remove("activeResult"); // Hide the result box
+
+    // Reset all variables to their initial state
+    que_count = 0;
+    que_numb = 1;
+    timeValue = 15;
+    widthValue = 0;
+    userScore = 0;
+
+    showQuestions(que_count); // Show the first question
+    queCounter(que_numb); // Update the question counter
+    clearInterval(counter); // Clear any existing timer
+    startTimer(timeValue); // Restart the timer
+    clearInterval(counterLine); // Clear any existing timer line
+    startTimerLine(widthValue); // Restart the progress line
+    next_btn.style.display = "none"; // Hide the next button
+    timeOff.textContent = "Time Left"; // Reset the timer text
+};
+
+
+
+
+// restart_quiz.onclick = () =>{
+//     quiz_box.classList.add("activeQuiz");
+//     result_box.classList.remove("activeResult");
+//     let que_count = 0;
+//     let que_numb = 1;
+//     let timeValue = 15;
+//     let widthValue = 0;
+//     let userScore = 0;
+//     showQuestions(que_count);
+//     queCounter(que_numb);
+//     clearInterval(counter);
+//     startTimer(timeValue);
+//     clearInterval(counterLine);
+//     startTimerLine(widthValue);
+//     next_btn.style.display = "none";
+//     timeOff.textContent = "Time Left";
+// }
 
 quit_quiz.onclick = () =>{
     window.location.reload();
