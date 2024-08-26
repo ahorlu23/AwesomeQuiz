@@ -353,7 +353,7 @@ footer .next_btn:hover{
     padding: 0 4px;
 
 }
-
+/* 
 .result_box .buttons{
     display: flex;
     margin: 20px 0;
@@ -371,4 +371,44 @@ footer .next_btn:hover{
     border: 1px solid #007bff;
     cursor: pointer;
     transition: all 0.3s ease;
+} */
+
+
+/* Your existing styles above */
+
+.result_box .buttons {
+    display: flex;
+    margin: 20px 0;
+    justify-content: center; /* Center the buttons horizontally */
 }
+
+/* Updated styles for buttons using div elements */
+.result_box .buttons .restart,
+.result_box .buttons .quit {
+    margin: 0 10px;
+    height: 45px;
+    padding: 0 20px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #fff;
+    background: #007bff; /* Default background color */
+    display: inline-block; /* Ensures they are inline and styled correctly */
+    text-align: center; /* Centers the text within the div */
+    line-height: 45px; /* Vertically centers text within the button height */
+}
+
+.result_box .buttons .restart:hover,
+.result_box .buttons .quit:hover {
+    background-color: #0263ca; /* Change color on hover */
+    opacity: 0.8; /* Slightly change opacity on hover */
+}
+
+.result_box .buttons .quit {
+    background-color: #dc3545; /* Different color for Quit button */
+}
+
